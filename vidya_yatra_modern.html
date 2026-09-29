@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vidya Yatra — How India's Students Study, Grade 1 to 12 and Beyond</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--saf:#FF9933;--sd:#c9600a;--grn:#138808;--navy:#0b2a6f;--ink:#0f1a33;--soft:#54607a;--line:rgba(11,42,111,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font:17px/1.7 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;margin:0;line-height:1.15;letter-spacing:-.02em}
+.toran{height:7px;background:linear-gradient(90deg,var(--saf) 33.3%,#fff 33.3% 66.6%,var(--grn) 66.6%);box-shadow:0 0 0 1px #e6e9f0}
+nav{position:sticky;top:0;z-index:9;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);display:flex;gap:4px;justify-content:center;flex-wrap:wrap;padding:10px}
+nav a{color:var(--navy);text-decoration:none;font-size:14px;font-weight:500;padding:6px 14px;border-radius:30px;transition:.25s}nav a:hover{background:var(--navy);color:#fff}
+header{position:relative;text-align:center;padding:100px 20px 120px;overflow:hidden;background:radial-gradient(ellipse at 0 0,rgba(255,153,51,.28),transparent 55%),radial-gradient(ellipse at 100% 100%,rgba(19,136,8,.22),transparent 55%)}
+#md{position:absolute;left:50%;top:50%;width:min(780px,140vw);margin:calc(min(780px,140vw)/-2);opacity:.13;color:var(--navy);animation:sp 90s linear infinite;z-index:0}
+@keyframes sp{to{transform:rotate(360deg)}}
+header>*{position:relative;z-index:1}
+.chip{display:inline-block;border:1px solid var(--navy);color:var(--navy);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:6px 16px;border-radius:30px;background:#fff}
+h1{font-size:clamp(52px,12vw,124px);margin:18px 0 4px;background:linear-gradient(90deg,var(--saf),var(--navy) 55%,var(--grn));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sa{font:600 14px Inter;letter-spacing:.4em;color:var(--navy)}
+header h2{font-size:clamp(20px,3.6vw,32px);margin:24px auto 0;max-width:780px;color:var(--ink)}
+header p{max-width:700px;margin:16px auto;color:var(--soft)}
+.btn{display:inline-block;font:600 15px Inter;background:var(--navy);color:#fff;border:0;padding:14px 32px;cursor:pointer;border-radius:40px;text-decoration:none;transition:.3s;box-shadow:0 10px 26px rgba(11,42,111,.28)}.btn:hover{background:var(--saf);transform:translateY(-3px)}
+section{max-width:1080px;margin:auto;padding:76px 22px}
+.k{color:var(--grn);letter-spacing:.24em;font-size:12px;font-weight:600;text-transform:uppercase}
+h2{font-size:clamp(28px,5vw,46px);color:var(--navy);margin:8px 0 12px}
+.sub{color:var(--soft);max-width:740px;margin-bottom:30px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tabs button{font:500 15px Inter;padding:9px 20px;border:1px solid var(--line);background:#fff;color:var(--navy);cursor:pointer;border-radius:40px;transition:.25s}
+.tabs button.a{background:var(--navy);color:#fff;border-color:var(--navy)}.tabs button:hover{border-color:var(--saf)}
+.pan{position:relative;background:#fff;border:1px solid var(--line);padding:32px 28px 28px;border-radius:22px;box-shadow:0 20px 50px rgba(11,42,111,.08);overflow:hidden;animation:fi .5s}
+.pan:before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:linear-gradient(90deg,var(--saf) 33%,#dfe3ec 33% 66%,var(--grn) 66%)}
+@keyframes fi{from{opacity:0;transform:translateY(12px)}}
+.pan h3{font-size:28px;color:var(--navy)}.pan small{color:var(--sd);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:12px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:18px}
+.cols b{display:block;color:var(--grn);font-size:12px;letter-spacing:.14em;text-transform:uppercase}.cols p{margin:3px 0 0}
+.bar{margin:18px 0}.bar div{height:14px;background:#eef1f7;border-radius:10px;overflow:hidden}
+.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--saf),var(--grn));transition:width 2s;border-radius:10px}
+.bar label{display:flex;justify-content:space-between;font-weight:500;font-size:15px;margin-bottom:5px}
+.pp{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.pp div{background:#fff;border:1px solid var(--line);padding:24px;border-radius:18px;transition:.35s}.pp div:hover{transform:translateY(-6px);border-color:var(--saf);box-shadow:0 18px 40px rgba(255,153,51,.2)}
+.pp h3{font-size:20px;color:var(--navy);margin-bottom:6px}.pp p{margin:0;font-size:16px}
+.note{border-left:4px solid var(--grn);background:rgba(19,136,8,.07);padding:16px 20px;margin:26px 0;font-size:15px;border-radius:0 12px 12px 0}
+#loop{width:100%;max-width:520px;display:block;margin:0 auto}
+#loop circle.n{fill:#fff;stroke:var(--navy);stroke-width:1.6;cursor:pointer;transition:.3s}#loop circle.n:hover,#loop circle.s{fill:var(--saf)}
+#loop text{font:600 11px Inter;text-anchor:middle;pointer-events:none;fill:var(--ink)}
+.q{margin:22px 0}.q b{display:block;margin-bottom:8px}.q button{display:block;width:100%;text-align:left;font:16px Inter;padding:12px 16px;margin:6px 0;border:1px solid var(--line);background:#fff;cursor:pointer;border-radius:12px;transition:.2s}.q button:hover{border-color:var(--saf)}.q button.s{background:var(--navy);color:#fff}
+footer{background:var(--navy);color:#dfe6ff;text-align:center;padding:56px 20px}footer a{color:#fff}
+.rv{opacity:0;transform:translateY(34px);transition:1s}.rv.on{opacity:1;transform:none}
+</style></head><body>
+<div class="toran"></div>
+<nav><a href="#j">Journey</a><a href="#d">Data</a><a href="#s">11–12 Streams</a><a href="#l">Life After</a><a href="#w">Who Won</a><a href="#sys">System</a><a href="#lab">Your Pattern</a><a href="#g">Glossary</a><a href="#m">Method</a></nav>
+<header><svg id="md" viewBox="-100 -100 200 200" fill="none" stroke="currentColor"></svg>
+<div class="chip">Independent Research · India</div><h1>Vidya Yatra</h1><div class="sa">THE JOURNEY OF LEARNING</div>
+<h2>How India's Students Study: Grade 1 to 12, and What Happens Next</h2>
+<p>India's school system runs from Class 1 to Class 12 (equivalent to Grades 1–12). This research explores how students study at each stage, how they choose a stream in Class 11, and how those choices shape their futures. Verified figures are labelled <b>DATA</b>. Everything else is a research model, open to correction. A glossary for international readers is included.</p><a class="btn" href="#j">Start exploring</a></header>
+
+<section id="j" class="rv"><div class="k">Stage by stage · NEP 5+3+3+4</div><h2>The Journey of a Student</h2><div class="sub">India's National Education Policy 2020 divides school into four stages. Study habits change sharply at each one.</div><div class="tabs" id="jt"></div><div id="jp"></div></section>
+
+<section id="d" class="rv"><div class="k">DATA · ASER 2024 (Pratham), rural India</div><h2>The Foundation Gap</h2><div class="sub">Habits do not start in Class 11. If the base is weak, the weakness travels upward.</div><div class="pan" id="ab"></div>
+<div class="note">Source: ASER 2024, a household survey of rural children (Pratham Foundation). It covers rural India only, so it does not describe urban students. It also reports that over 90% of children aged 6–14 are enrolled, but nearly 8% of 15–16 year-olds are out of school.</div></section>
+
+<section id="s" class="rv"><div class="k">Class 11 · 12</div><h2>Every Stream, Honestly</h2><div class="sub">The stream decision is often made at 15, under family and peer pressure. Here is how each stream studies, what it leads to, and its hidden costs.</div><div class="tabs" id="st"></div><div id="sp"></div></section>
+
+<section id="l" class="rv"><div class="k">Change</div><h2>What Changes After School</h2>
+<div class="pp"><div><h3>Class 10 → 11</h3><p>First big fork. Marks, family advice and coaching ads decide the stream, and interest often gets the smallest vote.</p></div><div><h3>Class 12 → Entrance</h3><p>Boards plus entrance exams (JEE, NEET, CUET, CLAT, CA/CS and others) turn learning into a ranking race.</p></div><div><h3>College years</h3><p>Rote-heavy students meet open-ended projects. Some struggle, and some finally find their subject.</p></div><div><h3>Work &amp; life</h3><p>Career outcomes depend on skills, networks, money, luck and second chances, not marks alone.</p></div></div></section>
+
+<section id="w" class="rv"><div class="k">Different roads</div><h2>Who Won, and How</h2><div class="sub">Well-documented Indian stories, each with a different path. They are inspiration, not proof.</div>
+<div class="pp"><div><h3>APJ Abdul Kalam</h3><p>Grew up in Rameswaram, sold newspapers as a boy, studied physics then aerospace engineering, and became a missile and space scientist and later President.</p></div><div><h3>Srinivasa Ramanujan</h3><p>Largely self-taught in mathematics. He failed his college exams because he neglected other subjects, yet his work is world famous.</p></div><div><h3>Kalpana Chawla</h3><p>From Karnal, Haryana. Studied aeronautical engineering and became an astronaut.</p></div><div><h3>Dhirubhai Ambani</h3><p>Left formal education after school, started small as a trader, and built Reliance.</p></div></div>
+<div class="note"><b>Survivorship bias:</b> we hear about winners because they won. For every famous name, many equally talented students never got the same chance. A good study of success must also study those who did not make it, and why.</div></section>
+
+<section id="sys" class="rv"><div class="k">The System</div><h2>Who Shapes How a Child Studies?</h2><div class="sub">Tap a circle. A student is pushed and pulled by many forces at once.</div>
+<svg id="loop" viewBox="0 0 400 400"></svg><div class="pan" id="lp" style="margin-top:14px;min-height:96px"></div></section>
+
+<section id="lab" class="rv"><div class="k">Interactive</div><h2>Find Your Study Pattern</h2><div class="sub">Four questions. Nothing is stored or sent anywhere.</div><div id="qz"></div><button class="btn" onclick="fin()">Show my pattern</button><div id="rs" class="pan" style="margin-top:22px;display:none"></div></section>
+
+<section id="g" class="rv"><div class="k">For international readers</div><h2>Glossary</h2><div class="sub">Quick definitions of Indian education terms used on this site.</div><div class="pp"><div><h3>Class 1–12</h3><p>Indian school grades. Class 10 and 12 end with national or state board exams.</p></div><div><h3>Board exams (CBSE, ICSE, State)</h3><p>Standardised school-leaving exams run by different boards. Class 12 results feed into university admission.</p></div><div><h3>Stream</h3><p>The subject track chosen in Class 11: Science, Commerce or Humanities (Arts).</p></div><div><h3>PCM / PCB</h3><p>Physics-Chemistry-Maths (engineering path) and Physics-Chemistry-Biology (medical path).</p></div><div><h3>JEE</h3><p>Joint Entrance Examination for engineering colleges such as the IITs.</p></div><div><h3>NEET</h3><p>National medical entrance exam for MBBS and related courses.</p></div><div><h3>CUET</h3><p>Common University Entrance Test for many central universities.</p></div><div><h3>CLAT</h3><p>Common Law Admission Test for national law universities.</p></div><div><h3>CA / CS / CMA</h3><p>Professional accountancy, company-secretary and cost-accounting qualifications.</p></div><div><h3>UPSC</h3><p>Civil services exam, taken after a bachelor's degree.</p></div><div><h3>Coaching / Tuition</h3><p>Private after-school classes, often for exam preparation.</p></div><div><h3>NEP 2020</h3><p>National Education Policy 2020, which reshaped school stages and stream flexibility.</p></div><div><h3>ASER</h3><p>Annual Status of Education Report, a survey of rural children's learning by Pratham.</p></div><div><h3>ITI / NSQF</h3><p>Vocational training institutes and the national skills qualification framework.</p></div></div></section>
+
+<section id="m" class="rv"><div class="k">Honesty</div><h2>Method &amp; Limits</h2>
+<div class="pan"><p><b>DATA</b> items come from ASER 2024. Stage and stream descriptions are a research model built from common patterns described in education discussions. They are hypotheses to test with surveys and interviews, not measured facts. Families, states, school boards (CBSE, ICSE, state boards) and income all change the picture. Terms like JEE or CUET are explained in the glossary. Nothing here is career advice, and it does not replace a counsellor.</p></div></section>
+
+<footer><p>Vidya Yatra · Research concept by <b>Arpit Pareek</b><br><a href="mailto:arpitpareek79@gmail.com">arpitpareek79@gmail.com</a> · <a href="https://in.linkedin.com/in/arpit-pareek-83b533361" target="_blank" rel="noopener">LinkedIn</a></p></footer><div class="toran"></div>
+
+<script>
+const J=[["Foundational","Nursery–Class 2 · ages 3–8","Play, songs, stories, mother tongue","Learns by touching, singing and copying. Parents and teachers are the whole world.","Very early pressure to read and write, and admission-interview anxiety."],
+["Preparatory","Class 3–5 · ages 8–11","Reading, writing, basic numbers","First homework and first tuition. Reading and arithmetic get built, or do not.","A weak base hides quietly and returns as fear of maths later."],
+["Middle","Class 6–8 · ages 11–14","Subjects split, textbooks get heavy","Memorising chapters, first ranks, Olympiad and foundation-coaching talk in cities. Phones enter life.","Marks turn into identity, and early labels like 'weak in maths' stick."],
+["Secondary","Class 9–10 · ages 14–16","Board exam years","Tuition peaks, sample papers and past-year questions rule, and 'which stream?' becomes the dinner-table topic.","Stream chosen by marks and pressure, not by interest."]];
+const S=[["Science · PCM","Physics, Chemistry, Maths","JEE, engineering, NDA, CUET, research","Problem solving, formulas, daily practice sets, coaching and mock tests.","Structured thinking that helps in many careers.","Extreme competition, burnout, and a feeling that rank equals worth."],
+["Science · PCB","Physics, Chemistry, Biology","NEET, MBBS/BDS, pharma, allied health, research","Heavy memorisation of biology and chemistry plus repeated revision cycles.","A clear road toward healthcare.","Seats are few, and many good students are told medicine is the only option."],
+["Commerce","Accounts, Business, Economics","CA, CS, CMA, BBA/B.Com, CUET, banking","Concepts plus practice: accounting problems, case thinking, real-world examples.","Early view of money, business and markets.","Undervalued at home, though professional exams are tough."],
+["Humanities / Arts","History, Polity, Geography, Psychology, Languages","UPSC, law (CLAT), journalism, design, psychology, teaching","Reading, writing, argument, discussion and self-driven exploration.","Freedom to think, write and question.","Wrongly seen as the 'easy' stream, so students get less guidance."],
+["Vocational / Skill","NSQF, ITI, diploma tracks","Skilled jobs, entrepreneurship, polytechnic routes","Learning by doing in labs, workshops and on the job.","Earlier income and real skills.","Social stigma, and weak awareness of good options."],
+["Flexible mix (NEP)","Choose subjects across streams","Varies by school and board","Depends on what your school actually offers.","In theory, a personal combination such as Physics + Economics.","Many schools still run only the old rigid streams."]];
+const V=[["Class 3 reads Class-2 text (govt schools)",23.4],["Class 5 reads Class-2 text · govt",44.8],["Class 5 reads Class-2 text · private",59.3],["Class 5 solves division (2024)",30.7],["Class 8 basic arithmetic (2024)",45.8]];
+const F=[["Family","Hopes, budget and 'what will people say' social pressure. Often the strongest force on stream and career."],["School & Teachers","Syllabus, board, quality of teaching and how mistakes are treated."],["Tuition & Coaching","Fills gaps and adds pressure. Cost decides who can access it."],["Exams & Ranks","What is tested becomes what is studied, and memory can beat understanding."],["Friends & Peers","Copying, comparing, study groups and shared stress."],["Phone & Internet","Free lectures on one side, distraction and social comparison on the other."]];
+const Q=[["A new chapter. What do you do first?",["Read it line by line and memorise","Try to understand why it works","Jump straight to solving questions","Discuss it with friends","Watch a video first"]],["Before an exam, you mostly...",["Revise notes again and again","Rebuild concepts from scratch","Solve old papers","Study in a group","Use online lectures and apps"]],["When stuck on a problem...",["Look up the answer and learn it","Think until it clicks","Try similar problems","Ask a friend or teacher","Search online"]],["Your best study time feels like...",["Quiet repetition","Deep thinking","Timed practice","Talking it out","Screen-based learning"]]];
+const L=["Memoriser","Concept-Builder","Practitioner","Collaborator","Digital Learner"];
+const T={0:"Strong memory. Add 'why' questions so facts turn into understanding.",1:"You understand deeply. Add timed practice so speed matches depth.",2:"Practice makes you exam-ready. Add concept revision so you can handle new question types.",3:"You learn through people. Set aside solo time so you can perform alone.",4:"Resources are unlimited. Fight distraction with fixed screen-free blocks."};
+const $=id=>document.getElementById(id);
+function tabs(id,arr,fn){const t=$(id);arr.forEach((a,i)=>{const b=document.createElement('button');b.textContent=a[0];b.onclick=()=>{[...t.children].forEach(x=>x.classList.remove('a'));b.classList.add('a');fn(a)};t.appendChild(b)});t.children[0].click()}
+tabs('jt',J,a=>$('jp').innerHTML=`<div class="pan"><small>${a[1]}</small><h3>${a[0]} Stage</h3><div class="cols"><div><b>Focus</b><p>${a[2]}</p></div><div><b>How they study</b><p>${a[3]}</p></div><div><b>Watch out</b><p>${a[4]}</p></div></div></div>`);
+tabs('st',S,a=>$('sp').innerHTML=`<div class="pan"><small>${a[1]}</small><h3>${a[0]}</h3><div class="cols"><div><b>Leads to</b><p>${a[2]}</p></div><div><b>How they study</b><p>${a[3]}</p></div><div><b>Strength</b><p>${a[4]}</p></div><div><b>Hidden cost</b><p>${a[5]}</p></div></div></div>`);
+$('ab').innerHTML=V.map(v=>`<div class="bar"><label><span>${v[0]}</span><span>${v[1]}%</span></label><div><span data-w="${v[1]}"></span></div></div>`).join('');
+let m='<circle r="92" stroke-width="1.8"/><circle r="84" stroke-width=".6"/><circle r="16" stroke-width="1.4"/>';for(let i=0;i<24;i++)m+=`<g transform="rotate(${i*15})"><line y1="-16" y2="-84" stroke-width=".9"/><circle cy="-88" r="1.6" fill="currentColor"/></g>`;$('md').innerHTML=m;
+let lp='<circle cx="200" cy="200" r="48" fill="#7b1e2b"/><text x="200" y="196" style="fill:#fff;font-size:14px">STUDENT</text><text x="200" y="212" style="fill:#ffd9a0">in India</text>';
+F.forEach((f,i)=>{const a=i*Math.PI/3-Math.PI/2,x=200+Math.cos(a)*135,y=200+Math.sin(a)*135;lp+=`<line x1="200" y1="200" x2="${x}" y2="${y}" stroke="#c99a2e" stroke-width="1.4" stroke-dasharray="4 4"/><g onclick="pk(${i})"><circle class="n" id="n${i}" cx="${x}" cy="${y}" r="42"/><text x="${x}" y="${y+4}">${f[0].split(' ')[0]}</text></g>`});
+$('loop').innerHTML=lp;
+function pk(i){document.querySelectorAll('circle.n').forEach(c=>c.classList.remove('s'));$('n'+i).classList.add('s');$('lp').innerHTML=`<h3 style="font-size:22px">${F[i][0]}</h3><p style="margin:4px 0 0">${F[i][1]}</p>`}pk(0);
+const A=[];$('qz').innerHTML=Q.map((q,i)=>`<div class="q"><b>${i+1}. ${q[0]}</b>${q[1].map((o,j)=>`<button onclick="sel(${i},${j},this)">${o}</button>`).join('')}</div>`).join('');
+function sel(i,j,b){A[i]=j;[...b.parentNode.querySelectorAll('button')].forEach(x=>x.classList.remove('s'));b.classList.add('s')}
+function fin(){const c=[0,0,0,0,0];A.forEach(j=>c[j]++);const n=A.filter(x=>x!==undefined).length||1,top=c.indexOf(Math.max(...c));
+$('rs').style.display='block';$('rs').innerHTML=`<h3>You lean: ${L[top]}</h3><p>${T[top]}</p>`+c.map((v,i)=>`<div class="bar"><label><span>${L[i]}</span><span>${Math.round(v/n*100)}%</span></label><div><span style="width:${v/n*100}%"></span></div></div>`).join('')+'<p style="font-size:14px;color:var(--soft)">Most students mix styles. This is a reflection tool, not a test.</p>'}
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');x.target.querySelectorAll('[data-w]').forEach(s=>s.style.width=s.dataset.w+'%')}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+</script></body></html>
